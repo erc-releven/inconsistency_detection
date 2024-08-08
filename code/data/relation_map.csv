@@ -1,0 +1,150 @@
+Set 1;Set 2
+father;FatherOf
+son;SonOf
+brother;BrotherOf
+husband;HusbandOf
+wife;WifeOf
+mother;MotherOf
+daughter;DaughterOf
+kin;RelativeOf
+uncle;UncleOf
+nephew;NephewOf
+sister;SisterOf
+cousin;CousinOf
+son-in-law;SonInLawOf
+father-in-law;FatherOf
+brother-in-law;BrotherOf
+grandson;GrandSonOf
+grandfather;GrandFatherOf
+niece;NieceOf
+mother-in-law;MotherOf
+relative by marriage;RelativeOf
+wife (second);WifeOf
+spiritual son;SonOf
+grandmother;GrandMotherOf
+granddaughter;GrandDaughterOf
+spiritual brother;BrotherOf
+cousin (second);CousinOf
+daughter (eldest);DaughterOf
+spiritual father;FatherOf
+husband (second);HusbandOf
+brother (elder);BrotherOf
+wife (first);WifeOf
+half-brother;HalfBrotherOf
+kin (by blood);RelativeOf
+son (adopted);AdoptedSonOf
+husband (first);HusbandOf
+son (eldest);SonOf
+brother (younger);BrotherOf
+son (youngest);SonOf
+brother (full);BrotherOf
+wife (betrothed);WifeOf
+aunt;AuntOf
+lover;PartnerOf
+daughter-in-law;DaughterInLawOf
+sister-in-law;SisterOf
+daughter (second);DaughterOf
+husband (betrothed);HusbandOf
+father (adoptive);FatherOf
+step-father;FatherOf
+uncle (paternal);UncleOf
+daughter (youngest);DaughterOf
+nephew (by marriage);NephewOf
+uncle (maternal);UncleOf
+relative;RelativeOf
+step-son;StepSonOf
+fiancé;PartnerOf
+kin (not by blood);RelativeOf
+fiancée;PartnerOf
+step-brother;StepBrotherOf
+step-sister;StepSisterOf
+cousin (first);CousinOf
+son (spiritual);SonOf
+mother (adoptive);MotherOf
+uncle (by marriage);UncleOf
+step-daughter;StepDaughterOf
+father (spiritual);FatherOf
+ancestor (grandfather);AncestorOf
+Man of the emperor;RelativeOf
+son (second);SonOf
+husband of sister-in-law;HusbandOf
+sister (elder);SisterOf
+relative (by blood);RelativeOf
+half-sister;HalfSisterOf
+close kin;RelativeOf
+relative (maternal);RelativeOf
+father-in-law (joint);FatherOf
+descendant (grandson);DescendantOf
+nephew (sister's son);NephewOf
+daughter (third);DaughterOf
+wife (divorced);ExWifeOf
+in-law;RelativeOf
+uncle of wife;UncleOf
+husband of niece;HusbandOf
+close relation;RelativeOf
+grandmother (paternal);GrandMotherOf
+nephew (son of brother);NephewOf
+kin (in fact cousin);CousinOf
+grandfather (paternal);GrandFatherOf
+daughter (elder);DaughterOf
+father-in-law of child;FatherOf
+son(-in-law);SonInLawOf
+son (younger);SonOf
+unrelated by blood;RelativeOf
+Man of the despoina;RelativeOf
+brother (in fact, uncle);BrotherOf
+man of the krites;RelativeOf
+husband (de facto);HusbandOf
+wife (de facto);WifeOf
+daughter (illegitimate);DaughterOf
+nephew (in fact, half-brother);NephewOf
+paternal aunt;AuntOf
+Man of the patriarch;RelativeOf
+Man of the kaisar;RelativeOf
+husband of sister of wife;HusbandOf
+betrothed of granddaughter;PartnerOf
+husband of freed concubine;HusbandOf
+step-mother;StepMotherOf
+father-in-law (designate);FatherOf
+son-in-law (potential);SonInLawOf
+husband (divorced);ExHusbandOf
+son (from first marriage);SonOf
+father-in-law (potential);FatherOf
+grand nephew;NephewOf
+wife (freed concubine);WifeOf
+great uncle;UncleOf
+great granddaughter;GrandDaughterOf
+Man of the krites of the velon;RelativeOf
+father (brother);FatherOf
+great-grandson;GreatGrandSonOf
+son (?);SonOf
+uncle (cousin);UncleOf
+grandmother (maternal);GrandMotherOf
+son (fourth);SonOf
+father of daughter-in-law;FatherOf
+son (third);SonOf
+great grandfather;GreatGrandFatherOf
+son (elder);SonOf
+grandmother of betrothed;GrandMotherOf
+father of son-in-law;FatherOf
+brother (in fact, nephew);BrotherOf
+uncle (in fact, half-brother);UncleOf
+grandfather (maternal);GrandFatherOf
+son (in fact, nephew);SonOf
+wife (proposed);WifeOf
+cousin of parent;CousinOf
+brother (first);BrotherOf
+father (in fact, uncle);FatherOf
+husband (third);HusbandOf
+husband (proposed);HusbandOf
+son (only);SonOf
+spiritual nephew;NephewOf
+nephew (cousin);NephewOf
+daughter (younger);DaughterOf
+spiritual uncle;UncleOf
+relative (aunt) by marriage;RelativeOf
+husband (by illicit marriage);HusbandOf
+relative (nephew) by marriage;RelativeOf
+wife (by illicit marriage);WifeOf
+daughter (adopted);AdoptedDaughterOf
+man;RelativeOf
