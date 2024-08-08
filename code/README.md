@@ -1,6 +1,6 @@
 # How to run code 
 
-## Step 1 download data 
+## Step 1 Download data 
 ### CSV 1 relation data 
 Downland csv using quarry :
 ```
@@ -85,7 +85,7 @@ python3 code/main.py
 
 ## Step 4 import data to **protege**
 
-1. Open and load ontology form an URL : https://cedric.cnam.fr/~hamdif/ontologies/files/PersonLink.owl 
+1. Open and load ontology form an URL: https://cedric.cnam.fr/~hamdif/ontologies/files/PersonLink.owl 
 
 2. In Tools select *Create axioms from Excel workbook*
 
