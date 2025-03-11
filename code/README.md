@@ -1,6 +1,6 @@
 # How to run code 
 
-## Step 1 download data 
+## Step 1 Download data 
 ### CSV 1 relation data 
 Downland csv using quarry :
 ```
