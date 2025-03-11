@@ -56,43 +56,44 @@ select * where {
 
 ## Step 2 create virtual environment
 
-Make sure you are in a main repository folder. 
+Move to code directory and run. 
 
-
-'''
-python3 -m venv relations
-'''
-
-### On MACOS/LINUX 
 ```
-source relations/Scripts/activate
+cd code
+uv venv 
+.venv\Scripts\activate # can be different on OX/Linux
 ```
-### On Windows
-```
-.\relations\Scripts\activate.bat
-```
-
-
 
 ## Step 3 run main.py 
 
-On top of the main fail setup paths to csvs and path to output data then run. 
+On top of the main file setup paths to csvs and path to output data then run. 
 
 ``` 
-python3 code/main.py
+cd ..
+<repository_path>/code/.venv/Scripts/python.exe <repository_path>/code/main.py
 ```
 
 
 ## Step 4 import data to **protege**
 
-1. Open and load ontology form an URL : https://cedric.cnam.fr/~hamdif/ontologies/files/PersonLink.owl 
+1. Open and load ontology form: code/exp_ontology.owl
 
 2. In Tools select *Create axioms from Excel workbook*
 
-3. Load created xlsx file 
+3. Load created xlsx file you want to check.
 
 4. Load rule code/data/load_data_transformation.json
 
 5. Generate and add axioms to existing ontology 
 
-6. Run reasoner.
+6. Run reasoner ELK reasoner.
+
+7. Manual remove any existing inconsistency of gender. (repped 2-5)
+
+8. Run Hermit reasoner to find more complex inconsistency. 
+    - By default ontology supports 4 different rules of this type:
+        - if Father(x,y) and Brother(x,y) -> Inconsistency
+        - if Sister(x,y) and Mather(x,y) -> Inconsistency 
+        - if GrandMatherOf(x,y) and Mother(x,y) -> Inconsistency
+        - if GrandFatherOf(x,y) and Father(x,y) -> Inconsistency
+    - If you want ot add more look main.py STEP 4
