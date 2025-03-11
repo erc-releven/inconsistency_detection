@@ -56,11 +56,14 @@ select * where {
 
 ## Step 2 create virtual environment
 
+Instal uv (https://docs.astral.sh/uv/getting-started/installation/)
+
 Move to code directory and run. 
 
 ```
 cd code
 uv venv 
+uv pip install -r pyproject.toml
 .venv\Scripts\activate # can be different on OX/Linux
 ```
 
