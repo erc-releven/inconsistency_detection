@@ -6,3 +6,4 @@ code/data/relation_data.csv
 code/ms-thesis
 code/.venv
 code/functions/__*
+code/.*
