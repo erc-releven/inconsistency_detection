@@ -1,12 +1,15 @@
 from functions.generate_xlsx import read_data, modify_data, merge_relation_map, merge_data_and_generate_xlsx
 from functions.network import generate_graph , save_subgraphs
 from functions.ontology_manipulation import modify_ontology_file,create_rule_xml
+from os import path
+
 # PATHS TO SETUP 
-GENDER_PATH = '.\\code\\data\\gender_query.csv'
-RELATION_PATH = '.\\code\\data\\query-result.csv'
-RELATION_MAP = '.\\code\\data\\relation_map.csv'
-OUT_PATH = '.\\code\\out\\final_data.xlsx'
-OUT = ".\\code\\out"
+DATA_PATH = path.join('.', 'code', 'data')
+GENDER_PATH = path.join(DATA_PATH, 'gender_query.csv')
+RELATION_PATH = path.join(DATA_PATH, 'query-result.csv')
+RELATION_MAP = path.join(DATA_PATH, 'relation_map.csv')
+OUT = path.join('.', 'code', 'out')
+OUT_PATH = path.join(OUT, 'final_data.xlsx')
 
 # STEP 1 format data and save to xmls 
 relation_data , gender_data ,map_data = read_data(RELATION_PATH,GENDER_PATH,RELATION_MAP)
