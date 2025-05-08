@@ -4,53 +4,51 @@
 ### CSV 1 relation data 
 Downland csv using quarry :
 ```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX star: <https://r11.eu/ns/star/>
 PREFIX sdhss: <https://r11.eu/ns/prosopography/>
 
-select * where { 
+select * where {
     ?pnode a crm:E21_Person ;
-         crm:P3_has_note ?person .
+         rdfs:label ?person .
     ?a1 a star:E13_sdhss_P17 ;
         crm:P140_assigned_attribute_to ?kr ;
         crm:P141_assigned ?pnode ;
-    	crm:P14_carried_out_by ?anode ;
-        crm:P17_was_motivated_by ?snode . 
-    ?anode crm:P3_has_note ?authority .
+        crm:P14_carried_out_by ?anode ;
+        ^crm:P67_refers_to ?snode .
+    ?anode rdfs:label ?authority .
     ?a2 a star:E13_sdhss_P18 ;
         crm:P140_assigned_attribute_to ?kr ;
         crm:P141_assigned ?knode .
     ?knode a crm:E21_Person ;
-         crm:P3_has_note ?kinsman .
+         rdfs:label ?kinsman .
     ?a3 a star:E13_sdhss_P16 ;
         crm:P140_assigned_attribute_to ?kr ;
         crm:P141_assigned ?kt .
     ?kt a sdhss:C4 ;
-        crm:P1_is_identified_by ?kinship .
-} 
+        rdfs:label ?kinship .
+}
 ```
 
 ### CSV 2 gender data 
 Download csv using quarry: 
 ```
-PREFIX lrm: <http://iflastandards.info/ns/lrm/lrmoo/>
-PREFIX sd: <https://r11.eu/rdf/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX star: <https://r11.eu/ns/star/>
-PREFIX sdhss: <https://r11.eu/ns/prosopography/>
-select * where { 
-     ?pnode a crm:E21_Person ;
-         crm:P3_has_note ?person .
+
+select * where {
+    ?pnode a crm:E21_Person ;
+        rdfs:label ?person .
     ?a1 a star:E13_crm_P41 ;
-    	crm:P141_assigned ?pnode ;
-    	crm:P140_assigned_attribute_to ?intermidiet1.
+        crm:P141_assigned ?pnode ;
+        crm:P140_assigned_attribute_to ?intermidiet1.
     ?a2 a star:E13_crm_P42;
-    	crm:P140_assigned_attribute_to ?intermidiet1;
-    	crm:P141_assigned ?pre_gender.
-    ?pre_gender crm:P1_is_identified_by ?gender.
-    
-      
-} 
+        crm:P140_assigned_attribute_to ?intermidiet1;
+        crm:P141_assigned ?pre_gender.
+    ?pre_gender rdfs:label ?gender.
+}
 ```
 
 
